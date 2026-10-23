@@ -112,6 +112,8 @@
   endif
 %}
 
+{% comment %} EXAMPLE BUG 1 {% endcomment %}
+
 {% capture media_slot_1 %}
   {%- if media_1 == 'image' and media_1_mobile == 'image' -%}
     {%- comment -%} Both desktop and mobile are images. Assume similar images, and this is art direction: use picture element. {%- endcomment -%}
